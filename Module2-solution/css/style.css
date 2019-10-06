@@ -1,35 +1,49 @@
 
-/*Base style*/
 * {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-}
-h1{
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
+  box-sizing: border-box; /*This makes sure that the padding and border are included in the total width and height of the elements.*/
+   margin: 0;
+   padding: 0;
+   }
 
-p{
-	text-align: center;
-	border: 1px solid black;
-	background-color: #62CBF2;
-	width:90%;
-	height: 70px;
-	margin-right: auto;
-	margin-left: auto;
-	padding:30px;
-
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 175%;
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
-.row {width: 100%;}
+#p1 {
+  padding-top: 20px;
+  text-align: left;
+}
+#p2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 125%;
+}
+
+.row {width: 100%}
+
+[class*="col-"] {
+  padding: 10px;
+  border: 1px solid black;
+  height: auto;
+  background-color: #62CBF2;
+  position: relative;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  height: auto;
+}
 
 /*Desktop view*/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
+    float: left; }
   .col-lg-1 {
     width: 8.33%;
   }
@@ -40,7 +54,8 @@ p{
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    /*width: 33.33%;*/
+    width: 30%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -89,7 +104,8 @@ p{
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    /*width: 50%;*/
+    width: 46.25%
   }
   .col-md-7 {
     width: 58.33%;
@@ -107,9 +123,11 @@ p{
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+    /*width: 100%;*/
+    width: 95%;
   }
 }
+
 /*Mobile view*/
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
@@ -149,6 +167,23 @@ p{
     width: 91.66%;
   }
   .col-sm-12 {
-    width: 100%;
+    /*width: 100%;*/
+    width: 95%;
   }
 }
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height:25px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #FFFFE0;
+}
+
+#title2 { background-color: #FFE4B5; }
+#title3 { background-color: #FF7F50; }
+
+
